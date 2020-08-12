@@ -1,0 +1,14 @@
+component: express
+name: websocket
+org: tencent
+app: websocketApp
+stage: dev
+
+inputs:
+  src: ./
+  functionName: ${name}
+  runtime: Nodejs10.15
+  timeout: 10
+  description: deploys server for simple chat application
+  region: ${env:REGION}
+  protocol: http
